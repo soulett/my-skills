@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Tech Note"
+  short_description: "Turn papers into student-safe project tech notes."
+  default_prompt: "Use $paper-to-project-tech-note to turn this paper PDF into a de-paperized project tech note for beginners."
