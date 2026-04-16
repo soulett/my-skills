@@ -73,11 +73,33 @@
 - `skills/project-doc-to-terms/scripts/resolve_terms_output_name.py`
 - `skills/project-doc-to-terms/agents/openai.yaml`
 
+### `skills/skill-repo-sync`
+
+这个 skill 用来把本地 skill 仓库按一套更稳的 GitHub 推送 SOP 同步出去，重点解决远端领先、HTTPS 凭据失败、代理失效、rebase 冲突和 README 冲突等常见问题。
+
+主要特点：
+
+- 推送前默认先检查仓库状态
+- 默认优先 `fetch + rebase`，避免直接 push 被拒
+- 默认优先使用 SSH，而不是依赖交互式 HTTPS 凭据
+- 明确约束不默认 `force push`
+- 适合 skill 仓库这类文档和目录更新较多的场景
+
+仓库路径：
+
+- `skills/skill-repo-sync/`
+
+核心文件：
+
+- `skills/skill-repo-sync/SKILL.md`
+- `skills/skill-repo-sync/agents/openai.yaml`
+
 ## 其他已有 Skill
 
 - `skills/analyst`
 - `skills/brainstorming`
 - `skills/frontend-design`
+- `skills/skill-repo-sync`
 - `skills/prd`
 - `skills/writing-plans`
 

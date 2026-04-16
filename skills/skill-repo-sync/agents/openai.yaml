@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Repo Sync"
+  short_description: "Safely sync a skill repo to GitHub."
+  default_prompt: "Safely sync the current skill repository to GitHub by checking state, fetching remote updates, rebasing if needed, and pushing over SSH when available."
