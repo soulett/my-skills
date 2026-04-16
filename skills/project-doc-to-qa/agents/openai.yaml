@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Doc to QA"
+  short_description: "Generate interview Q&A docs from project documents."
+  default_prompt: "Generate a 40-question full Q&A doc and a 20-question high-frequency Q&A doc from the provided project document."

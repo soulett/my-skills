@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Doc to Terms"
+  short_description: "Generate a project terms glossary."
+  default_prompt: "Extract core technical terms from the provided project document and generate a project-specific terminology explanation markdown document in the same folder."
