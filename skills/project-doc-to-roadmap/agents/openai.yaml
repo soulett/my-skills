@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Doc to Roadmap"
+  short_description: "Generate a project learning roadmap."
+  default_prompt: "Turn the provided project document into a dependency-aware learning roadmap with domestic resources and one essential English link per learning module."

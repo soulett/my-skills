@@ -73,6 +73,28 @@
 - `skills/project-doc-to-terms/scripts/resolve_terms_output_name.py`
 - `skills/project-doc-to-terms/agents/openai.yaml`
 
+### `skills/project-doc-to-roadmap`
+
+这个 skill 用来把项目文档整理成一份按学习依赖重组的学习路线，而不是照着原文目录平铺。它适合“从基础学到项目模块、实验分析和面试表达”的场景。
+
+主要特点：
+
+- 默认按 `12-20` 个学习模块重组知识路线
+- 每个模块固定包含前置依赖、面试高频程度、学习重点、国内资源和一个英文必看链接
+- 默认不输出 `使用说明`、`本地优先资料` 这类前言块
+- 强调项目驱动学习，不机械照搬原文目录
+
+仓库路径：
+
+- `skills/project-doc-to-roadmap/`
+
+核心文件：
+
+- `skills/project-doc-to-roadmap/SKILL.md`
+- `skills/project-doc-to-roadmap/references/roadmap-rubric.md`
+- `skills/project-doc-to-roadmap/scripts/resolve_roadmap_output_name.py`
+- `skills/project-doc-to-roadmap/agents/openai.yaml`
+
 ### `skills/skill-repo-sync`
 
 这个 skill 用来把本地 skill 仓库按一套更稳的 GitHub 推送 SOP 同步出去，重点解决远端领先、HTTPS 凭据失败、代理失效、rebase 冲突和 README 冲突等常见问题。
@@ -99,6 +121,7 @@
 - `skills/analyst`
 - `skills/brainstorming`
 - `skills/frontend-design`
+- `skills/project-doc-to-roadmap`
 - `skills/skill-repo-sync`
 - `skills/prd`
 - `skills/writing-plans`
